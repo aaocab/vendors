@@ -1,0 +1,38 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: [ bug, triage ]
+assignees:
+  - MacroMan
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please provide all information required to reproduce the bug
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of Spaces-API is this occuring on? Versions below 3 will not be fixed. Please upgrade.
+      options:
+        - 3.5.0
+        - 3.4.0
+        - 3.3.0
+        - 3.2.0
+        - 3.1.0
+        - 3.0.0
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: What version of PHP are you using?
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell

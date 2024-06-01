@@ -1,0 +1,40 @@
+{
+    "name": "brick/geo",
+    "description": "GIS geometry library",
+    "type": "library",
+    "keywords": [
+        "Brick",
+        "Geo",
+        "GIS",
+        "Geography",
+        "Geometry"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "brick/reflection": "~0.2.0 || ~0.3.0",
+        "doctrine/orm": "2.*",
+        "doctrine/data-fixtures": "1.*",
+        "phpunit/phpunit": "7.*",
+        "php-coveralls/php-coveralls": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brick\\Geo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brick\\Geo\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 600,
+        "preferred-install": "source"
+    },
+    "suggest": {
+        "ext-json": "To read and write GeoJSON files"
+    }
+}
